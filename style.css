@@ -1,0 +1,283 @@
+/* IMPOSTAZIONI GENERALI */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0px auto;
+}
+
+/* NAVBAR */
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar {
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* HEADER */
+.img-sfondo {
+    margin-top: 20px;
+    background-image: url('/img/3.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    position: relative;
+}
+
+.img-logo {
+    margin: 0px auto;
+    width: 260px;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: 0;
+    right: 0;
+}
+
+/* MAIN */
+
+/* SECTION EAT */
+.container-eat {
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.eat {
+    width: 100%;
+    background-image: url('/img/stefano.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    background-attachment: fixed;
+}
+
+.eat-second {
+    margin-top: 20px;
+    background-image: url('/img/food-5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+.eat-info {
+    background-color: white;
+    height: 110px;
+    width: fit-content;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    top: 25px;
+    left: 10px;
+    right: 0;
+    border-radius: 10px;
+}
+
+.eat-info p,
+.vine-info p {
+    margin: 15px 0px;
+}
+
+/* SECTION VINE */
+.container-vine {
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vine-second {
+    width: 100%;
+    background-image: url('/img/vino-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    order: 1;
+}
+
+.vine {
+    margin-top: 20px;
+    width: 100%;
+    background-image: url('./img/botti.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    position: relative;
+    order: 2;
+}
+
+.vine-info {
+    background-color: white;
+    width: fit-content;
+    height: 110px;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+}
+
+/* SECTION HISTORY */
+.history-container {
+    border: 1px solid black;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 20px;
+    background-image: url('/img/marmo.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.marco {
+    background-image: url('/img/marco-2.png');
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.logo {
+    width: 200px;
+    position: absolute;
+    left: 0;
+}
+
+.history {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width:768px) {
+    .nav-list {
+        justify-content: space-evenly;
+    }
+
+    .img-sfondo {
+        height: 500px;
+    }
+
+    .img-logo {
+        width: 450px;
+        top: 25%;
+    }
+
+    .container-eat {
+        justify-content: space-between;
+    }
+
+    .eat {
+        width: 48%;
+        height: 500px;
+        background-size: contain;
+        background-position: 0;
+    }
+
+    .eat-second {
+        width: 48%;
+        height: 500px;
+        margin-top: 0px;
+        background-position: none;
+        background-attachment: fixed;
+    }
+
+    .eat-info {
+        height: 150px;
+        width: fit-content;
+        padding: 15px;
+        bottom: 0;
+        left: 35%;
+        top: 50%;
+        right: 0;
+        border-radius: 10px;
+    }
+
+    .container-vine {
+        justify-content: space-between;
+    }
+
+    .vine {
+        width: 48%;
+        margin-top: 0px;
+        height: 500px;
+        order: 1;
+        background-position: top;
+    }
+
+    .vine-info {
+        height: 150px;
+        width: fit-content;
+        padding: 15px;
+        bottom: 0;
+        left: 35%;
+        top: 50%;
+        right: 0;
+        border-radius: 10px;
+    }
+
+    .vine-second {
+        width: 48%;
+        height: 500px;
+        order: 2;
+    }
+
+    .history-container {
+        height: 500px;
+    }
+
+    .marco {
+        width: 350px;
+        height: 500px;
+    }
+
+    .logo {
+        width: 500px;
+        position: absolute;
+        right: 50px;
+        left: auto;
+    }
+
+    .history {
+        position: absolute;
+        top: 200px;
+        right: 200px;
+    }
+
+}
