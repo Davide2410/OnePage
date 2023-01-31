@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Page Ciamarras</title>
-
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -14,7 +15,7 @@
 <body>
     <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="row navbar-group">
+        <div class="navbar-group">
             <ul class="nav-list">
                 <li class="nav-item">
                     <a href="#eat">Eat</a>
@@ -24,9 +25,6 @@
                 </li>
                 <li class="nav-item">
                     <a href="#history">History</a>
-                </li>
-                <li class="nav-item">
-                    <a href="">Contact</a>
                 </li>
             </ul>
         </div>
@@ -40,13 +38,23 @@
     <!-- ELEMENTO PRINCIPALE -->
     <main>
         <!-- CIBO -->
-        <section id="eat" class="container-eat">
+        <section id="eat" class="flex container-eat">
             <div class="eat"></div>
             <div class="eat-second">
                 <div class="eat-info">
                     <h2>Food</h2>
                     <p>Colazione, pranzo & cena</p>
-                    <button>More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VINO -->
+        <section id="vine" class="flex container-vine">
+            <div class="vine-second"></div>
+            <div class="vine">
+                <div class="vine-info">
+                    <h2>Drinks</h2>
+                    <p>Wine, cocktail & beer</p>
                 </div>
             </div>
         </section>
@@ -55,29 +63,29 @@
         <section id="history" class="history-container">
             <div class="marco"></div>
             <img src="/img/logo-2.png" class="logo" alt="">
-            <button class="history">More</button>
+            <img src="/img/giappone-2.png" class="stile-1" alt="">
         </section>
-
-        <!-- VINO -->
-        <section id="vine" class="container-vine">
-            <div class="vine-second"></div>
-            <div class="vine">
-                <div class="vine-info">
-                    <h2>Drinks</h2>
-                    <p>Wine, cocktail & beer</p>
-                    <button>More</button>
-                </div>
-            </div>
-        </section>
-
-
-
     </main>
     <!-- ELEMENTO SECONDARIO (GALLERY) -->
-    <aside></aside>
+    <aside class="container">
+        <div class="gallery-group">
+            <img src="./img/food-1.jpg" class="gallery_img" alt="Image 1">
+            <img src="./img/food-3.jpg" class="gallery_img" alt="Image 3">
+            <img src="./img/food-4.jpg" class="gallery_img" alt="Image 4">
+            <img src="./img/food-7.jpg" class="gallery_img" alt="Image 7">
+            <img src="./img/food-10.jpg" class="gallery_img" alt="Image 8">
+        </div>
+    </aside>
     <!-- FOOTER -->
-    <footer></footer>
-
+    <footer class="container">
+        <hr>
+        <div class="footer-container">
+            <span>Powered by Davide Alfonsi</span>
+        </div>
+    </footer>
+    <!-- BTN TOP -->
+    <i class="bi bi-arrow-up-circle-fill" id="btn" onclick="saliTop()"></i>
+    <script src="/script.js"></script>
 </body>
 
 </html>
